@@ -20,8 +20,7 @@ body {
 
 @font-face {
   font-family: 'stretch_proregular';
-  src: url('stretchproregular-webfont.woff2') format('woff2'),
-       url('stretchproregular-webfont.woff') format('woff');
+  src: url('stretchproregular-webfont.woff2') format('woff2'), url('stretchproregular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
