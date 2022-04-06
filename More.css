@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {  
+  --pblack: #121212;
+  --pgrey: #E5E5E5;
+  --porange: #E26746;
+  --porangeactive: #FF7460;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pblack);
+}
+
+@font-face {
+  font-family: 'stretch_proregular';
+  src: url('stretchproregular-webfont.woff2') format('woff2'),
+       url('stretchproregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: 'Stretch Pro';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4;
+  color: var(--porange);
+}
+
+h2 {
+  font-family: 'Stretch Pro';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4;
+  color: var(--pgrey);
+}
+
+p {
+  font-family: 'Arial', sans-serif ;
+  line-height: 1.4;
+  color: var(--pgrey);
+}
+/* navbar */
+
+.navbar {
+  background-color: #121212;
+}
+
+.nav-txt {
+  font-family: 'Arial', sans-serif ;
+  line-height: 1.4;
+  color: #E5E5E5;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px;
+}  
+
+.nav-txt:hover {
+  color: #E26746;
+}
+
+.offcanvas-header, .offcanvas-body {
+  background-color: #121212;
+}
+
+.navbar-toggler, .btn-close {
+  background-color: #E5E5E5;
+}
+
+
+/* more about us section */
+#moreabus {
+  height: 100%;
+  width: auto;
+  background-color: #121212;
+}
+
+.eighty {
+  display: flex;
+  flex-direction: row;
+}
+
+.ninety {
+  display: flex;
+  justify-content: end;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+/* buttons */
+.button {
+  margin: 0 auto;
+  color: var(--pblack);
+  background-color: var(--porange);
+  border: 2px solid var(--porange);
+  padding: 1rem 3rem;
+  font-family: 'Arial', sans-serif ;
+  line-height: 1.4;
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  width: 12rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover, .button:active {
+  color: #121212;
+  background-color: var(--porangeactive);
+  border: 2px solid var(--porangeactive);
+}
+/* this is the path studio about us section */
+
+.moreabusbt, .serbtn {
+  margin: 2rem 0 0 0;
+  width: 30%;
+}
+
+.wallpaper {
+  position: relative;
+}
+
+.med-heading {
+  font-size: 48px;
+}
+
+.paragraph, .ptxt {
+  font-size: 16px;
+}
+
+.whoweare, .fndrs {
+  width: 75%;
+}
