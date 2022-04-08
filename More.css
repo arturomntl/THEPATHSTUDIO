@@ -50,6 +50,7 @@ p {
 }
 /* navbar */
 
+
 .navbar {
   background-color: #121212;
 }
@@ -75,30 +76,6 @@ p {
   background-color: #E5E5E5;
 }
 
-
-/* more about us section */
-#moreabus {
-  height: 100%;
-  width: auto;
-  background-color: #121212;
-}
-
-.eighty {
-  display: flex;
-  flex-direction: row;
-}
-
-.ninety {
-  display: flex;
-  justify-content: end;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  margin: auto 0;
-}
-
 /* buttons */
 .button {
   margin: 0 auto;
@@ -120,6 +97,28 @@ p {
   background-color: var(--porangeactive);
   border: 2px solid var(--porangeactive);
 }
+
+
+/* more about us section */
+#moreabus {
+  height: 100vh;
+  width: auto;
+  background-color: #121212;
+}
+
+.eighty {
+  display: flex;
+  flex-direction: row;
+  margin: 10% auto 0 auto;
+}
+
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
 /* this is the path studio about us section */
 
 .moreabusbt, .serbtn {
@@ -141,4 +140,17 @@ p {
 
 .whoweare, .fndrs {
   width: 75%;
+}
+
+/* Founders section */
+
+#Founders {
+  height: 100vh;
+  width: auto;
+  background-color: #121212;
+}
+
+.ninety {
+  display: flex;
+  flex-direction: row;
 }
