@@ -21,8 +21,6 @@ body {
   background-color: var(--pblack);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
-
 /* Basier Square Fonts */
 
 @font-face {
@@ -124,8 +122,8 @@ body {
 
 /* end basier square fonts */
 
-/* start fonts */
-  /* base fonts */
+/* fonts section */
+
 h1 {
   font-family: 'Syncopate', sans-serif;
   font-weight: normal;
@@ -146,55 +144,15 @@ p {
   color: var(--pgrey);
 }
 
-  /* custom css body fonts */
-/* fonts */
-  /* big header in the beginning using syncopate font */
-.syncobighdr {
-  color: var(--porange);
-  text-align: center;
-  letter-spacing: -4.5%;
-  font-size: 82px;
-}
-    /* last header at the bottom using syncopate font */
-.syncosmhdr {
-  margin: 2rem auto;
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: -0.035em;
-  color: var(--pgrey);
-}
 
-    /* section headings */
+/* section headings */
 .med-heading {
   font-size: 40px;
   color: var(--pgrey);
   letter-spacing: 0.075em;
 }
-    /* first white text and card title */
-.pbldhdr, .cdtitle {
-  font-size: 24px;
-  color: var(--pgrey);
-  letter-spacing: 0.015em;
-  font-family: 'basier_squaresemibold', 'arial', sans-serif;
-}
-    /* value sections values headers */
-.vhdr {
-  font-size: 20px;
-  font-family: 'basier_squarebold', 'arial', sans-serif;
-}
 
-.paragraph, .ptxt {
-  font-size: 16px;
-}
-    /* muted text */
-.cdtxt, .bottomdesc, .ftxt {
-  color: var(--mutetext);
-}
-
-/* links */
-.nav-txt, .button   {
-  text-decoration: none;
-}
+/* end fonts section */
 
 /* navbar */
 
@@ -219,196 +177,61 @@ p {
 }
 
 .navbar-toggler, .btn-close {
-  background-color: var(--mutetext);
+  color: var(--pgrey);
 }
 
-/* buttons */
+/* hero section */
+
+  
+/* hero */
+#hero {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  background-image: url(Images_For_PATH/PATH\ PIC.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--pblack);
+}
+
 .button {
-  margin: 0 auto;
-  color: var(--pblack);
-  background-color: var(--porange);
-  border: 2px solid var(--porange);
+  margin: 3rem auto;
+  color: var(--pgrey);
+  background-color: var(--pblack);
+  border: 2px solid var(--pgrey);
   padding: 1rem 3rem;
   font-family: 'basier_squareregular', 'arial', sans-serif;
   line-height: 1.56;
-  border-radius: 0.25rem;
   padding: 1rem 1.5rem;
   width: 12rem;
   text-align: center;
 }
 
-.button:hover, .button:active {
-  color: var(--pblack);
-  background-color: var(--porange);
-  border: 2px solid var(--porange);
-}
-
-
-/* more about us section */
-#moreabus, #team {
-  display: flex;
-  height: 100vh;
-  width: auto;
+.button:hover, .button:active, .button:focus {
+  color: var(--pgrey);
   background-color: var(--pblack);
+  border: 2px solid var(--porangeactive);
+  color: var(--porangeactive);
+  box-shadow: none;
 }
 
-.odin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.navbar-toggler, .btn-close {
+  background-color: var(--mutetext);
+}
+
+.med-heading {
+  font-size: 40px;
   margin: auto;
+
 }
 
-/* start describe section */
-#describe {
-  display: flex;
-  height: 75%;
-  width: auto;
-  background-color: var(--pblack);
-  flex-direction: column;
+.button   {
+  text-decoration: none;
 }
 
-.topbox {
-  text-align: left;
-  margin: 0 auto 10rem auto;
-  flex-direction: row;
-  justify-content: start;
-  display: flex;
-}
-
-.middlebox { 
-  text-align: left;
-  margin: auto;
-  flex-direction: row;
-  justify-content: end;
-  display: flex;
-}
-
-.bottombox { 
-  text-align: left;
-  margin: 12% auto;
-  flex-direction: row;
-  justify-content: end;
-  display: flex;
-}
-
-.pdesc {
-  width: 50%;
-}
-
-/* coreval section */
-#coreval {
-  display: flex;
-  height: 100%;
-  width: auto;
-  background-color: var(--pblack);
-  flex-direction: column;
-  justify-content: center;
-  margin: 50% auto 0;
-}
-
-.servhdr {
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.log {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0;
-  align-self: center;
-}
-
-.value {
-  width: 20%;
-}
-
-
-
-/* Founders section */
-
-#Founders {
-  height: 100vh;
-  width: auto;
-  background-color: var(--pblack);
-}
-
-.fndrstopbox {
-  text-align: left;
-  margin: 50% auto 0;
-  flex-direction: column;
-  justify-content: start;
-  display: flex;
-}
-
-.twenty {
-  display: flex;
-  flex-direction: row;
-}
-
-.fndrs {
-  width: 75%;
-  text-align: left;
-}
-
-.fndrsmidbox {
-  text-align: left;
-  margin: 10% auto;
-  flex-direction: column;
-  justify-content: start;
-  display: flex;
-}
-
-/* team section */
-#team {
-  flex-direction: column;
-  justify-content: center;
-  margin: 20% auto 0;
-}
-
-.barrel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  align-self: center;
-}
-
-.card {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  border-color: transparent;
-  overflow: hidden;
-}
-
-.card:hover .fndrimg {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-.fndrimg {
-  max-width: 400px;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  position: relative;
-  transition: all .75s;
-  opacity: .6;
-}
-
-.card-img-overlay {
-  border-radius: 0;
-}
-
-.b {
-  background: linear-gradient(179.94deg, #00000000 64.36%, #000000 100%);
-  width: auto;
-}
-
+/* footer */
 #footer {
   height: 100%;
   width: auto;
@@ -434,7 +257,6 @@ p {
   text-decoration: none;
   font-size: 12px;
 }
-
 .ftlink:hover {
   color: var(--pgrey);
 }
@@ -443,117 +265,119 @@ p {
   width: 10rem;
 }
 
+/* contact */
 
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 601px) and (max-width: 1280px) {
-  /* start fonts */
-  .syncobighdr {
-    font-size: 50px;
-  }
-
-  .syncosmhdr, .med-heading {
-    font-size: 34px;
-  } 
-
-  p, .paragraph, .ptxt, .cdtxt, .bottomdesc, .ftxt, .ftlink {
-    font-size: 16px;
-  }
-
-  /* end fonts */
-    /* start coreval/and team section */
-    .log {
-      flex-direction: column;
-    }
-
-    .value {
-      width: 50%;
-    }
-    
-    .card {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1/1
-    }
-    
-    .fndrimg {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      position: relative;
-      opacity: 1;
-    }
-    
-    .card:hover .fndrimg {
-      transform: scale(1.00);
-    }
-    /* end coreval/and team section */
+#contactform {
+  height: 100%;
+  width: auto;
+  background-color: var(--pblack);
+  margin: 1rem 0;
+  padding: 1rem;
 }
 
+label {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+  color: var(--pgrey);
+}
+
+input, textarea {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+  color: var(--pgrey);
+}
+
+::placeholder {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+}
+:-moz-placeholder {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+}
+::-moz-placeholder {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+}
+:-ms-input-placeholder {
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+}
+
+input[type="name"], input[type="email"], .message
+{
+  background: var(--deepcomp);
+  border: none;
+  border-radius: 0;
+  color: var(--pgrey);
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+  font-size: 16px;
+}
+
+input[type="name"]:focus, input[type="email"]:focus, .message:focus {
+  background: var(--deepcomp);
+  border: 2px solid var(--porange);
+  border-radius: 0;
+  color: var(--pgrey);
+  font-family: 'basier_squareregular', 'arial', sans-serif;
+  line-height: 1.56;
+  font-size: 16px;
+}
+
+.form-control, .form-control:nth-child(0) {
+  background-color: var(--deepcomp);
+  box-shadow: none;
+  border-radius: 0%;
+  border: none;
+}
+
+.form-control:focus {
+  background-color: var(--deepcomp);
+  box-shadow: none;
+  border: 2px solid var(--porange);
+  border-radius: 0%;
+}
+
+.sbm {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+/* responsive design */
+/* tablet */
+@media (min-width: 601px) and (max-width: 1280px) {
+  .ftxt, .ftlink {
+    font-size: 10px;
+  }
+}
+
+
+/* mobile */
 @media (max-width: 28.75em) {
-  .syncobighdr {
-    font-size: 42px;
-  }
-  
-  .syncosmhdr, .med-heading {
-    font-size: 32px;
-  } 
-
-  p, .paragraph, .ptxt, .cdtxt, .bottomdesc {
-    font-size: 15px;
+  /* fontsize  */
+  .med-heading{
+    font-size: 40px;
+    text-align: center;
   }
 
-  /* describe section */
-  .pdesc {
+  /* buttons */
+
+  .button, .sbm {
+    margin: 3rem auto;
     width: 100%;
   }
 
-
-/* start coreval/and team section */
-.log {
-  flex-direction: column;
 }
 
-.value {
-  width: 100%;
-}
 
-.barrel {
-  flex-direction: column;
-}
 
-.card {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-}
 
-.fndrimg {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  position: relative;
-  opacity: 1;
-}
 
-.card:hover .fndrimg {
-  transform: scale(1.00);
-}
 
-.bx {
-  width: 7.5rem;
-}
-/* end coreval/and team section */
-}
